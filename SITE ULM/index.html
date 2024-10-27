@@ -1,0 +1,421 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aéroclub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .carousel-item {
+            height: 100vh;
+            min-height: 500px;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+
+        section {
+            padding-top: 100px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 2s forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" tabindex="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__fadeInDown" href="#accueil">
+                <img src="./images/ULMlogoblanc.png" alt="Logo" width="65" height="30" class="d-inline-block align-text-top"> ACF2L
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__fadeInDown" href="#accueil" style="animation-delay: 0.2s;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInDown" href="#activites" style="animation-delay: 0.4s;">Nos Activités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInDown" href="#tarifs" style="animation-delay: 0.6s;">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInDown" href="#moyens-pedagogiques" style="animation-delay: 0.8s;">Moyens Pédagogiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInDown" href="#galerie" style="animation-delay: 1s;">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInDown" href="#contact" style="animation-delay: 1.2s;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="accueil" class="fade-in"></div>
+
+    <!-- Bannière -->
+    <div id="carouselExampleCaptions" class="carousel slide fade-in" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/greenplane.jpg" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center animate__animated animate__fadeInUp">
+                    <h1 class="text-light">Vous souhaitez piloter un ULM?</h1><br>
+                    <div>
+                        <a href="#activites" class="btn btn-light opacity-75">Rejoignez nous</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/whiteplane.jpg" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center animate__animated animate__fadeInUp">
+                    <h1 class="text-dark">Découvrez nos activités aériennes !</h1><br>
+                    <div>
+                        <a href="#tarifs" class="btn btn-dark opacity-75">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+
+    <!-- Activités -->
+    <section id="activites" class="py-5 bg-black text-light fade-in">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nos Activités</h2>
+                <p class="text-white opacity-75">Découvrez toutes les activités passionnantes que nous proposons dans notre aéroclub.</p>
+                <p class="text-white opacity-50">L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente FFULM.
+                    N°04674 - Agrément n° AS70986858 Le siège social : 62, Avenue de la République, 70200 Lure</p>
+            </div>
+            <div class="row text-center">
+                <!-- Activité 1: Formation de Pilote -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/Tecnam-P92-exter.jpg" class="card-img-top w-100 h-100" alt="Formation de Pilote">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Formation de Pilote</h5>
+                            <p class="card-text">Obtenez votre licence de pilote ULM avec nos instructeurs qualifiés.</p>
+                            <a href="formation-pilote.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activité 2: Baptême de l'air -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/pendulaire1.jpg" class="card-img-top w-100 h-100" alt="Baptême de l'air">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Baptême de l'air</h5>
+                            <p class="card-text">Vivez une expérience unique en survolant notre belle région en ULM.</p>
+                            <a href="bapteme-air.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activité 3: Location d'ULM -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/pendulaire.jpg" class="card-img-top w-100 h-100" alt="Location d'ULM">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Location d'ULM</h5>
+                            <p class="card-text">Louez un ULM pour explorer le monde en toute liberté.</p>
+                            <a href="location-ulm.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <!-- Activité 4: Maintenance ULM -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/troisAutogires.jpg" class="card-img-top w-100 h-100" alt="Maintenance ULM">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Maintenance ULM</h5>
+                            <p class="card-text">Nous assurons la maintenance et l'entretien de vos appareils.</p>
+                            <a href="maintenance-ulm.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activité 5: Hébergement Stagiaires -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/salleCours.png" class="card-img-top w-100 h-100" alt="Hébergement Stagiaires">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hébergement Stagiaires</h5>
+                            <p class="card-text">Nous proposons des hébergements pour les stagiaires en formation.</p>
+                            <a href="hebergement-stagiaires.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activité 6: Navigation ULM -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
+                    <div class="card h-100 bg-dark text-light shadow-sm">
+                        <div class="overflow-hidden" style="height: 50%;">
+                            <img src="./images/slide-3.jpg" class="card-img-top w-100 h-100" alt="Navigation ULM">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Navigation ULM</h5>
+                            <p class="card-text">Découvrez nos outils de navigation pour voler en toute sécurité.</p>
+                            <a href="navigation-ulm.html" class="btn btn-light opacity-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tarifs -->
+<section id="tarifs" class="py-5 bg-black">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-white">Nos Tarifs</h2>
+            <p class="text-light opacity-75">Découvrez nos offres tarifaires pour chaque activité proposée.</p>
+        </div>
+        <div class="row">
+            <!-- Tarifs 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="./images/ULMPendulaire.webp" class="card-img-top" alt="Water Color Painting">
+                    <div class="card-body">
+                        <h5 class="card-title">Batême de l'air</h5>
+                        <h5 class="card-title opacity-75">ULM Pendulaire</h5>
+                        <p class="card-text text-muted">Découvrez le vol en ULM accompagné d'un instructeur diplômé : 20 minutes de survol des paysages magnifiques de Moffans-et-Vacheresse, Lyoffans et Roye, dans une ambiance détendue et conviviale.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#apply" class="btn btn-dark">Réserver</a>
+                            <span class="fw-bold text-dark">190.00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarifs 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="./images/ULMAutogire.jpg" class="card-img-top" alt="Paly House & Nursery">
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">Batême de l'air</h5>
+                        <h5 class="card-title opacity-75"> ULM Autorgire</h5>
+                        <p class="card-text text-muted">Découvrez le pilotage d’un ULM en double commande avec un instructeur diplômé. En 30 minutes, initiez-vous aux commandes de base et vivez les sensations uniques d’un vol sécurisé.</p><br>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#apply" class="btn btn-dark">Réserver</a>
+                            <span class="fw-bold text-dark">260.00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarifs 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="./images/ULMMultiaxes.webp" class="card-img-top" alt="Primary Classes">
+                    <div class="card-body">
+                        <h5 class="card-title">Batême de l'air</h5>
+                        <h5 class="card-title opacity-75">ULM Multi-axes</h5>
+                        <p class="card-text text-muted">Embarquez dans un ULM aux sensations proches d’un avion, guidé par un instructeur diplômé. En 30 minutes, découvrez en toute sécurité les bases du pilotage.</p><br>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#apply" class="btn btn-dark">Réserver</a>
+                            <span class="fw-bold text-dark">380.00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Moyens Pédagogiques -->
+<section id="moyens-pedagogiques" class="py-5 bg-black text-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-light">Nos Moyens Pédagogiques</h2>
+            <p class="text-light opacity-75">Un aérodrome privé avec la possibilité d’un hébergement dans un environnement exceptionnel</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                <img src="./images/about1.png" alt="Vue aérienne de l'aérodrome" class="img-fluid w-65 h-75 rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-light">Sur le site</h3>
+                <ul>
+                    <li>Une surface totale de <b>45 hectares</b> dégagés.</li>
+                    <li>Deux pistes en X de <b>800</b> et <b>450 m</b>.</li>
+                    <li>Un hydrosurface de <b>8 hectares</b>.</li>
+                    <li>Trois hangars avec surface couverte de <b>4300 m²</b>.</li>
+                    <li>Locaux administratifs informatisés.</li>
+                    <li>Salle de cours multimédia avec simulateur de vol.</li>
+                    <li>Un atelier d’entretien et de réparation.</li>
+                    <li>Des capacités d’accueil et de restauration sur place.</li>
+                    <li>Connexion WIFI gratuit sur toute la base.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Galerie -->
+    <section id="galerie" class="py-5 bg-black">
+        <div class="container text-center">
+            <h2 class="text-light mb-4">Galerie</h2>
+            <p class="text-light mb-5">Quelques photos de nos activités et de nos ULM en action !</p>
+
+                    <!-- Image 1 -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./images/pendulaire1.jpg" class="d-block w-100 h-75 mx-auto " alt="Photo 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Photo d'un pendulaire</h5>
+                        </div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="carousel-item">
+                        <img src="./images/troisAutogires.jpg" class="d-block w-100 h-75 mx-auto" alt="Photo 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Photo de trois autogires</h5>
+                        </div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="carousel-item">
+                        <img src="./images/pendulaire.jpg" class="d-block w-100 h-75 mx-auto" alt="Photo 3"> 
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Photo d'un pendulaire en vol</h5>
+                        </div>
+                    </div>
+                    <!-- Image 4 -->
+                    <div class="carousel-item">
+                        <img src="./images/slide-3.jpg" class="d-block w-100 h-75 mx-auto" alt="Photo 3"> 
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Photo d'un Autorgire en vol</h5>
+                        </div>
+                    </div>                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact  -->
+    <section id="contact" class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 text-white">Nous Contacter</h2>
+                <p class="lead text-white-50">Pour toute information, n'hésitez pas à nous joindre.</p>
+            </div>
+
+            <div class="row align-items-center">
+                <!--  Informations -->
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h5 class="text-uppercase">Contactez-nous</h5>
+                        <p class="text-white-50">Nous sommes à votre disposition pour toute question.</p>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope text-primary fs-4 me-3"></i>
+                            <span class="text-white">Email: contact@aeroclub.com</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="bi bi-telephone text-primary fs-4 me-3"></i>
+                            <span class="text-white">Téléphone: 01 23 45 67 89</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="bi bi-geo-alt text-primary fs-4 me-3"></i>
+                            <span class="text-white">Adresse: 62, Avenue de la République, 70200 Lure</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Form -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            const elements = document.querySelectorAll(".fade-in");
+            const windowHeight = window.innerHeight;
+            elements.forEach(function (el) {
+                const positionFromTop = el.getBoundingClientRect().top;
+                if (positionFromTop - windowHeight <= -100) {
+                    el.classList.add("animate__animated", "animate__fadeIn");
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
